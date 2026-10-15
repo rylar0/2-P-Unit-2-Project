@@ -1,16 +1,16 @@
 <!--Unit 2 Project
 Requirements
 [ yes ] Two Element Selectors
-[  ] Two ID Selectors
-[  ] Two Class Selectors
+[ yes ] Two ID Selectors
+[ yes ] Two Class Selectors
 [ yes ] Three Images
 
 Select ONE Additional Feature to Add  
-[ no ] Feature 1 - Include Border Radius CSS Property 
-[ no ] Feature 2 - Include a Static Background Image
+[ yes ] Feature 1 - Include Border Radius CSS Property 
+[ yes ] Feature 2 - Include a Static Background Image
 [ no ] Feature 3 - Include An Animated Background Color Change
 [ no ] Feature 4 - Embed YouTube Video 
-[ no ] Feature 5 - Include Border CSS Property 
+[ yes ] Feature 5 - Include Border CSS Property 
 -->
     
 <!DOCTYPE HTML>
@@ -21,65 +21,74 @@ Select ONE Additional Feature to Add
 
         <style>
 
-        h1 { text-align: center; }
+        h1 { text-align: center; color:rgb(238, 179, 15); background-color:black; width:fit-content; margin: auto;}
 
         h3 { text-align: center; }
 
         p { text-align: center; }
 
-        #Light { color: rgb(255, 244, 196);}
+        img { border: 5px solid; border-radius: 60px }
 
-        #Ice { color: ;}
+        #Light { color: rgb(255, 244, 196); background-color:black; }
 
+        #Ice { color:aliceblue; background-color:black; }
+
+        #Plant { color: rgb(17, 165, 17); background-color:black; }
+
+        #Fire { color: rgb(255, 72, 0); background-color:black; }
+
+        .Description { color:white; background-color:rgba(0, 0, 0, 0.534); }
+
+        .ToH { color:rgb(110, 18, 231); background-color:rgba(226, 223, 223, 0.719); }
 
         </style>
 
     </head>
-    <body style="background-image:url(https://wallpapers.com/images/featured/the-owl-house-0m97quxbf8feubwe.jpg);">
+    <body style="background-image:url(https://wallpapers.com/images/featured/the-owl-house-0m97quxbf8feubwe.jpg)"; background-size: cover; background-repeat: no-repeat; background-attachment: fixed;>
 
         <h1>The Owl House Glyphs</h1>
-        <p>The Owl House is a TV show explores an interesting magic system in which elements can be channeled through paper drawings called glyphs.</p>
-        <p>The main character Luz, on her pursuit to becoming a witch, discovers these glyphs that help her use magical powers despite not being born with them.</p>
-        <p>The four most important glyphs are directly linked to the Titan.</p>
+        <p class="ToH">The Owl House is a TV show explores an interesting magic system in which elements can be channeled through paper drawings called glyphs.</p>
+        <p class="ToH">The main character Luz, on her pursuit to becoming a witch, discovers these glyphs that help her use magical powers despite not being born with them.</p>
+        <p class="ToH">The four most important glyphs are directly linked to the Titan.</p>
         
        
         <h3 id="Light"> Light Glyph</h3>
         <center>
         <img
         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe2FlEZ04R60oM36EvVKGpuYoX8wV4jkUh8koTaO9Utw&s=10"
-        width="100"
+        width="200"
         >
         </center>
-         <p>The light glyph is the first glyph introduced into the series. It creates a ball of light which helps lessen effects of other spells.</p>
+         <p class="Description">The light glyph is the first glyph introduced into the series. It creates a ball of light which helps lessen effects of other spells.</p>
         
         
         <h3 id="Ice">Ice Glyph</h3>
         <center>
         <img
         src="https://i.redd.it/876p6qi7web71.jpg"
-        width="100"
+        width="200"
         >
         </center>
-         <p>The second glyph discovered, it creates a block of ice.</p>
+         <p class="Description">The second glyph discovered, it creates a block of ice.</p>
  
-         <h3>Plant Glyph</h3>
+         <h3 id="Plant">Plant Glyph</h3>
         <center>
          <img
         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqOSjyfIPSLhpgioUSYU3WkktrPD3jlo-vcAdHbzSYo3UxMu8gb82s8NaQ&s=10"
-        width="100"
+        width="200"
         >
         </center>
-         <p>Found in the bud of a flower, this glyph grows a plant.</p>
+         <p class="Description">Found in the bud of a flower, this glyph grows a plant.</p>
         
          
-         <h3>Fire Glyph</h3>
+         <h3 id="Fire">Fire Glyph</h3>
         <center>
         <img
         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrs9bKnr7ExIVRq-E1M5kXGuZ2LmOksHJUoGkpr2AXvq1ydUfW6BaZgh4&s=10"
         width="100"
         >
         </center>
-         <p>This glyph generates a fire spell.
+         <p class="Description">This glyph generates a fire spell.
 
     </body>
 </html>
